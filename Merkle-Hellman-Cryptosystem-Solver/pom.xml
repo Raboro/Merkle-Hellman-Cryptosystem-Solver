@@ -4,7 +4,7 @@
 
   <groupId>io.github.raboro</groupId>
   <artifactId>merklehellmancryptosystemsolver</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.0.0</version>
   <packaging>jar</packaging>
 
   <name>Merkle-Hellman-Cryptosystem-Solver</name>
@@ -15,5 +15,13 @@
     <maven.compiler.target>17</maven.compiler.target>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
+
+  <distributionManagement>
+    <repository>
+      <id>github</id>
+      <name>Github OWNER Apache Maven Packages</name>
+      <url>https://maven.pkg.github.com/Raboro/Merkle-Hellman-Cryptosystem-Solver</url>
+    </repository>
+  </distributionManagement>
 
 </project>
