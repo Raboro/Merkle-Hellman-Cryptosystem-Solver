@@ -24,10 +24,10 @@ public class Knapsack {
      */
     public boolean isSuperIncreasingKnapsack() {
         final int knapsackSum = Arrays.stream(data).sum();
-        return knapsackSum <= c && isSuperIncreasingKnapsackSumNotSmallerC();
+        return knapsackSum <= c && allElementsSuperIncreasing();
     }
 
-    private boolean isSuperIncreasingKnapsackSumNotSmallerC() {
+    private boolean allElementsSuperIncreasing() {
         for (int i = 1; i < data.length - 1; i++) {
             int sum = Arrays.stream(data, 0, i).sum();
             if (sum >= data[i]) {
